@@ -1,0 +1,109 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    text-align: left;
+}
+.logOut{
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: right; 
+}
+.mainContainer{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+}
+.change{
+    color: blue;
+    font-size: 22px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.verify{
+    color: black;
+    font-size: 30px;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input{
+    border-radius: 2px;
+    border-color: rgb(27, 151, 27);
+    background-color: white;
+    font-size: 20px;
+    display: block;
+    width: 440px;
+    height: 50px;
+    margin: 15px;
+}
+.formContainers{
+    align-self: center;
+   
+}
+#signUp{
+    color: gray;
+    font-size: 15px;
+    text-align: center;
+}
+.submitContainer{
+    padding: 20px;
+    text-align: center;
+}
+.mask{
+
+    background-color: rgb(196, 11, 11);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 10px;
+    height: 50px;
+    width: 440px;
+    border: none;
+}
+.back{
+    background-color: rgb(235, 235, 235);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    height: 30px;
+    width: 120px;
+    border: none;
+    align-self: center;
+}
+
+.valid{
+    color: rgb(4, 70, 4);
+    background-color: rgb(120, 240, 120);
+}
+
+.invalid{
+    color: rgb(132, 11, 11);
+    background-color: rgb(246, 116, 116);
+}
+
+.footerTop{
+    color: rgb(81, 78, 78);
+    background-color: rgb(242, 239, 239);
+    height: 80px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footerLinks{
+    display: flex;
+    flex-flow: column-wrap;
+    justify-content: space-between;
+}
+
+#validOrInvalid{
+    display: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
