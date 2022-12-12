@@ -19,7 +19,7 @@ Los hipervínculos creados en la sección "cerrar sesión" ubicada en la esquina
 
 ## 2. Hitos cumplidos
 
-*Insertar un número (txt) a validar. Solo acepta caracteres numéricos del 0-9 (dígitos).
-*Muestra si el resultado es válido o inválido.
-*Se ocultan todos los números de la tarjeta, a excepción de los últimos 4 caracteres.
-*No se puede ingresar un campo vacío.
+* Insertar un número (txt) a validar. Solo acepta caracteres numéricos del 0-9 (dígitos).
+* Muestra si el resultado es válido o inválido.
+* Se ocultan todos los números de la tarjeta, a excepción de los últimos 4 caracteres.
+* No se puede ingresar un campo vacío.

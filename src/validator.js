@@ -6,7 +6,7 @@ const validator = {
     let cardArrayReverse=cardArray.reverse();
     console.log(cardArrayReverse);
     cardArrayReverse=cardArrayReverse.map(function (digits,numbers) {
-      if (numbers %2==!0){
+      if (numbers %2 === 1){ //En lugar de buscar la diferencia con 0 buscamos la igualdad con 1
         const duplicatedDigits=digits*2;
         if (duplicatedDigits>=10){
           return duplicatedDigits-9;
@@ -33,7 +33,7 @@ const validator = {
   },
   
   //finalSum:function (cardArrayReverse) {
-    //let cardDigitSum=cardArrayReverse.
+  //let cardDigitSum=cardArrayReverse.
     
   //},
 

@@ -21,20 +21,20 @@ function showCard(event){
 
   console.log(event.target.value);
   document.getElementById("maskedNumber").innerText=inputCardNumber;
-//maskedNumber es mi boton guardar
+  //maskedNumber es mi boton guardar
 
 }
 
 function isValid(){ //Cambiar handleValidate por isValid porque así pide la descripción
   
-  let showIfIsValid=validator.validateCard();
+  const showIfIsValid=validator.validateCard();
   let message="";
   let backgroundColor="";
   let border="";
   console.log(showIfIsValid);
 
   
-  let validCard=document.getElementById("validOrInvalid");
+  const validCard=document.getElementById("validOrInvalid");
   if (showIfIsValid) {
     message=" ✅ ¡Tarjeta válida! 🥳"
     backgroundColor="#8af293"
@@ -46,10 +46,10 @@ function isValid(){ //Cambiar handleValidate por isValid porque así pide la des
     border="2px solid #9e1b06"
   }
 
-    validCard.innerText=message;
-    validCard.style.backgroundColor=backgroundColor;
-    validCard.style.display="block";
-    validCard.style.border=border;
+  validCard.innerText=message;
+  validCard.style.backgroundColor=backgroundColor;
+  validCard.style.display="block";
+  validCard.style.border=border;
 }
 
 
