@@ -12,9 +12,17 @@ document.getElementById("maskify").addEventListener("click",validator.maskify);
 
 document.addEventListener("input",showCard);
 function showCard(event){
+  let inputCardNumber=event.target.value;
+  
+  inputCardNumber=inputCardNumber.replace(/[^0-9]+/g, "");
+  console.log(inputCardNumber);
+
+  document.getElementById("cardNumber").value=inputCardNumber;
+
   console.log(event.target.value);
-  document.getElementById("maskedNumber").innerText=event.target.value;
+  document.getElementById("maskedNumber").innerText=inputCardNumber;
 //maskedNumber es mi boton guardar
+
 }
 
 function isValid(){ //Cambiar handleValidate por isValid porque así pide la descripción
