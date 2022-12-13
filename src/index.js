@@ -10,7 +10,7 @@ document.getElementById("maskify").addEventListener("click",isValid);
 
 document.getElementById("maskify").addEventListener("click",validator.maskify);
 
-document.addEventListener("input",showCard);
+document.getElementById("cardNumber").addEventListener("input",showCard);
 function showCard(event){
   let inputCardNumber=event.target.value;
   
