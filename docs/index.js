@@ -6,9 +6,17 @@ validator.maskify()
 
 //console.log(validator.mena)
 
-document.getElementById("maskify").addEventListener("click",isValid);
+//document.getElementById("maskify").addEventListener("submit",isValid);
 
-document.getElementById("maskify").addEventListener("click",validator.maskify);
+function handleSubmit(e) { //Para evitar que se refresque la página
+  e.preventDefault();
+  isValid();
+}
+
+document.getElementById("maskify").addEventListener("submit",validator.maskify);
+document.getElementById("formContainer").addEventListener("submit",handleSubmit);
+//document.getElementById("formContainer").addEventListener("submit",handleSubmit);
+
 
 document.getElementById("cardNumber").addEventListener("input",showCard);
 function showCard(event){
