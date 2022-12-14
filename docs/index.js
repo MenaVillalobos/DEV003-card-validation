@@ -11,9 +11,10 @@ validator.maskify()
 function handleSubmit(e) { //Para evitar que se refresque la página
   e.preventDefault();
   isValid();
+  validator.maskify();
 }
 
-document.getElementById("maskify").addEventListener("submit",validator.maskify);
+//document.getElementById("maskify").addEventListener("submit",validator.maskify);
 document.getElementById("formContainer").addEventListener("submit",handleSubmit);
 //document.getElementById("formContainer").addEventListener("submit",handleSubmit);
 
